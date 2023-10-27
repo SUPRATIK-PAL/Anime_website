@@ -9,7 +9,7 @@ import Upcoming from "./Upcoming.js"
 const HomePage = () => {
 
     const {search, handleChange, handleSubmit, getUpcomingAnime, getAiringAnime} = useContext(GlobalContext);
-    const [rendered, setRendered] = useState('Popular');
+    const [rendered, setRendered] = useState('popular');
     const switchComponent = () => {
         switch (rendered) {
             case 'popular':
